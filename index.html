@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <!-- font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- bootstrap 5.2 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <title>index</title>
+</head>
+<body>
+
+  <!-- title -->
+  <div class="title">
+    <div class="container title py-1">
+      <img src="images/title.png" alt="title" class="siteTitle">
+      <img src="images/logo.png" alt="logo" class="logo">
+    </div>
+  </div>
+  <!-- navbar dropdown -->
+  <nav class="navbar navbar-expand-lg" style="background: #00426D;">
+    <div class="container-fluid">
+      <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="text-light"><i class="fa-solid fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" dir="rtl">
+        <div class="navbar-nav m-auto">
+          <!-- accueil -->
+            <div class="dropdown">
+              <a href="index.html" target="_blank" rel="noopener noreferrer">
+                <button class="btn" type="button">
+                  الرئيسية
+                </button>
+              </a>
+            </div>
+            <!-- agence -->
+            <div class="dropdown">
+              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                الوكالة
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="agence.html" target="_blank">التعريف بالوكالة</a></li>
+                <li><a class="dropdown-item" href="agence.html">كلمة المدير</a></li>
+                <li><a class="dropdown-item" href="agence.html">المهام</a></li>
+                <li><a class="dropdown-item" href="agence.html">قيمنا</a></li>
+                <li><a class="dropdown-item" href="agence.html">المجلس الاداري</a></li>
+                <li><a class="dropdown-item" href="agence.html">المارد البشرية</a></li>
+              </ul>
+            </div>
+            <!-- Gouvernance -->
+            <div class="dropdown">
+              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                الحوكمة
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="gouvernance.html" target="_blank">اعداد عقود المياه الجوفية</a></li>
+              </ul>
+            </div>
+            <!-- realisation -->
+            <div class="dropdown">
+              <a href="realisation.html" target="_blank" rel="noopener noreferrer">
+                <button class="btn" type="button">
+                  الانجازات
+                </button>
+              </a>
+            </div>
+            <!-- Recherche scientifique -->
+            <div class="dropdown">
+              <a href="recherche.html" target="_blank" rel="noopener noreferrer">
+                <button class="btn" type="button">
+                  البحث العلمي
+                </button>
+              </a>
+            </div>
+            <!-- Communication -->
+            <div class="dropdown">
+              <a href="communication.html" target="_blank" rel="noopener noreferrer">
+                <button class="btn" type="button">
+                  التواصل
+                </button>
+              </a>
+            </div>
+            <!-- coopération et partenariat -->
+            <div class="dropdown">
+              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                التعان و الشراكة
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="cooperation.html">التعاون الاسباني</a></li>
+                <li><a class="dropdown-item" href="cooperation.html">التعاون البلجيكي</a></li>
+                <li><a class="dropdown-item" href="cooperation.html">شراكات الوكالة</a></li>
+              </ul>
+            </div>
+            <!-- contact -->
+            <div class="dropdown">
+              <a href="contact.html" target="_blank" rel="noopener noreferrer">
+                <button class="btn" type="button">
+                  الاتصال
+                </button>
+              </a>
+            </div>
+          </div>
+      </div>
+    </div>
+  </nav>
+  <!-- ///////////////////////////////////////////////////////// -->
+  <!-- slider -->
+    <div dir="ltr" id="carouselExampleCaptions" class="carousel slide home" data-bs-ride="false" style="margin-bottom: 130px;">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="height:15px;width:15px;border-radius: 0% 100% 40% 60% / 0% 52% 48% 100% "></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2" style="height:15px;width:15px;border-radius: 0% 100% 40% 60% / 0% 52% 48% 100% "></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3" style="height:15px;width:15px;border-radius: 0% 100% 40% 60% / 0% 52% 48% 100% "></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/ban1.jpg" class="d-block w-100">
+          <div class="carousel-caption d-md-block">
+            <h3>"الوكالة المائية لحوض لوكوس</h3>
+            <p>
+              إدارة متكاملة ومنسقة لموارد المياه من أجل التنمية المستدامة لحوض اللوكوس (تقييم، تخطيط، تنظيم الموارد، استغلال المنشآت المائية، إلخ).
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/ban3.jpg" class="d-block w-100">
+          <div class="carousel-caption d-md-block">
+            <h3>مصادر المياه</h3>
+            <p>
+              يحتوي الحوض على مئات من المصادر التي توفر إمدادات المياه في المناطق الريفية والحضرية.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/ban4.jpg" class="d-block w-100">
+          <div class="carousel-caption d-md-block">
+            <h3>التراث المهم للسدود</h3>
+            <p>
+              حوض السبو يحتوي على 11 سداً كبيراً بسعة تخزين تتجاوز 6 مليارات متر مكعب.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- section2 -->
+  <div class="container sec2" style="margin-bottom: 130px;">
+    
+    <div class="">
+      <h3>الملك محمد السادس يهتم بمشاكل الماء.. توجيهات تهدف إلى عقلنة الاستعمال
+      </h3>
+      <p>
+        في خطابه لافتتاح الدورة التشريعية الحادية عشرة، أكد الملك محمد السادس على أن المغرب يواجه أزمة مائية هيكلية، وأن بناء التجهيزات المائية لا يمكن حل جميع المشاكل بمفرده، ودعا الحكومة والمؤسسات والمواطنين إلى حل هذه المشكلة بجدية وتجنب التبذير والاستغلال العشوائي للمياه. 
+        <br><br>
+        كما أشار إلى أن سياسة بناء السدود في المملكة المغربية جعلتها نموذجًا عالميًا في تثمين الموارد المائية وعقلنة استغلالها، وذلك بفضل إنجاز أكثر من 50 سدًا و20 سدًا قيد الإنشاء، وتمكنت المملكة من تلبية الحاجيات المائية رغم موجة جفاف غير مسبوقة.
+        <br><br>
+        كما تحدث الملك عن الحاجة لتحقيق نقلة نوعية في مجال الاستثمار.
+      </p>
+    </div>
+    <img src="images/roi1.png">
+  </div>
+
+  <!-- mostajadaat -->
+  <div class="mostajadat container" style="margin-bottom: 130px;">
+    <h3>المستجدات</h3>
+    <div class="ligne"></div>
+    <div class="content my-5">
+
+      <!-- card -->
+      <div class="card">
+        <div class="contentImg">
+          <img src="images/img2.png" class="card-img-top" alt="Loukkos">
+          <div class="couvreImg">
+            <a href="page1.html" target="_blank" rel="noopener noreferrer"><i class="fa-regular fa-circle-play"></i></a>
+          </div>
+        </div>
+        <div class="card-body">
+          <h6 class="card-title">تقرير | حوض اللوكوس.. بلدة مغربية تكتسب شهرة عالمية في إنتاج الفواكه
+          </h6>
+          <p class="card-text">تقرير| حوض اللوكوس.. بلدة مغربية تكتسب شهرة عالمية في إنتاج الفواكه 
+          </p>
+          <a href="page1.html" target="_blank" class="btn btn-sm">شاهد المزيد</a>
+        </div>
+      </div>
+
+      <!-- card -->
+      <div class="card">
+        <div class="contentImg">
+          <img src="images/img1.jpg" class="card-img-top" alt="Loukkos">
+          <div class="couvreImg">
+            <a href="page2.html" target="_blank" rel="noopener noreferrer"><i class="fa-regular fa-circle-play"></i></a>
+          </div>
+        </div>
+        <div class="card-body">
+          <h6 class="card-title">جولة في حوض اللوكوس المغرب 2022 منظر ساحر على مد البصر
+          </h6>
+          <p class="card-text">جولة في حوض اللوكوس المغرب 2022 منظر ساحر على مد البصر
+          </p>
+          <a href="page2.html" target="_blank" class="btn btn-sm">شاهد المزيد</a>
+        </div>
+      </div>
+
+      <!-- card -->
+      <div class="card">
+        <div class="contentImg">
+          <img src="images/img2.png" class="card-img-top" alt="Loukkos">
+          <div class="couvreImg">
+            <a href="page1.html" target="_blank" rel="noopener noreferrer"><i class="fa-regular fa-circle-play"></i></a>
+          </div>
+        </div>
+        <div class="card-body">
+          <h6 class="card-title">تقرير | حوض اللوكوس.. بلدة مغربية تكتسب شهرة عالمية في إنتاج الفواكه
+          </h6>
+          <p class="card-text">تقرير| حوض اللوكوس.. بلدة مغربية تكتسب شهرة عالمية في إنتاج الفواكه
+          </p>
+          <a href="page1.html" target="_blank" class="btn btn-sm">شاهد المزيد</a>
+        </div>
+      </div>
+
+      <!-- card -->
+      <div class="card">
+        <div class="contentImg">
+          <img src="images/img1.jpg" class="card-img-top" alt="Loukkos">
+          <div class="couvreImg">
+            <a href="page2.html" target="_blank" rel="noopener noreferrer"><i class="fa-regular fa-circle-play"></i></a>
+          </div>
+        </div>
+        <div class="card-body">
+          <h6 class="card-title">جولة في حوض اللوكوس المغرب 2022 منظر ساحر على مد البصر
+          </h6>
+          <p class="card-text">جولة في حوض اللوكوس المغرب 2022 منظر ساحر على مد البصر
+          </p>
+          <a href="page2.html" target="_blank" class="btn btn-sm">شاهد المزيد</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- section 3 -->
+  <div class="sec3 p-5" style="margin-bottom: 130px;">
+    <div class="container contant" dir="ltr">
+
+      <div>
+        <h5>حالة الموارد البشرية</h5>
+        <ul>
+          <li><a href="http://" target="_blank">الوضع الهيدرولوجي</a></li>
+          <li><a href="http://" target="_blank">موقع السدود</a></li>
+          <li><a href="http://" target="_blank">تقرير الجودة</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h5>التشريعات واللوائح</h5>
+        <ul>
+          <li><a href="#" target="_blank">قانون المياه 10-95</a></li>
+          <li><a href="decret.html" target="_blank">مرسوم</a></li>
+          <li><a href="arretes.html" target="_blank">طلبات</a></li>
+          <li><a href="#" target="_blank">دائري</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h5>المجال العام الهيدروليكي</h5>
+        <ul>
+          <li><a href="procedure.html" target="_blank">إجراءات</a></li>
+          <li><a href="#" target="_blank">نماذج</a></li>
+          <li><a href="#" target="_blank">العائدات</a></li>
+          <li><a href="#" target="_blank">تتبع ارتباط التطبيق</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h5>المناقصات والتوظيف</h5>
+        <ul>
+          <li><a href="https://www.marchespublics.gov.ma/pmmp/" target="_blank">الارتباط بالبوابة</a></li>
+          <li><a href="#" target="_blank">برنامج مؤقت</a></li>
+          <li><a href="#" target="_blank">نتائج العطاء</a></li>
+          <li><a href="recrutement.html" target="_blank">توظيف</a></li>
+        </ul>
+      </div>
+      
+    </div>
+  </div>
+  <!-- section 5 -->
+  <div class="sec5" style="margin-bottom: 130px;">
+    <div class="content">
+      <div class="container text">
+        <h3>حوض اللوكوس هو نظام هيدروليكي يستخدم لتوليد الكهرباء وتنظيم تدفق المياه</h3>
+      <p>
+        تتميز أهمية حوض اللوكوس بعدة جوانب. أولاً، يعد هذا النظام من أبرز وسائل توليد الطاقة المتجددة والنظيفة. فبفضل تحويل الطاقة المائية إلى طاقة حركية، يمكن تشغيل المحركات والمولدات الكهربائية لتوليد الكهرباء بطريقة صديقة للبيئة وغير ملوثة للهواء.
+      </p>
+      <p>
+        يمكن استخدام حوض اللوكوس في تخزين المياه للاستخدام الزراعي والشرب وتزويد المجتمعات المحلية بالمياه اللازمة. يمكن تنظيم تدفق المياه بطريقة تضمن توافرها المستدام على مدار السنة وتلبية احتياجات السكان في مناطق الريف والحضر.
+      </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- liens -->
+  <div class="container wrapper" style="margin-bottom: 130px;">
+    <h3>التعاون والشراكة</h3>
+    <div class="ligne"></div>
+
+    <section class="product" dir="ltr"> 
+      <button class="pre-btn"><i class="fa-solid fa-chevron-right"></i></button>
+      <button class="nxt-btn"><i class="fa-solid fa-chevron-right"></i></button>
+      <div class="product-container">
+          <div class="product-card">
+              <div class="product-image">
+                  <img src="images/aui.png" class="product-thumb" alt="">
+              </div>
+          </div>
+          <div class="product-card">
+              <div class="product-image">
+                  <img src="images/HCEF.jpg" class="product-thumb" alt="">
+              </div>
+          </div>
+          <div class="product-card">
+              <div class="product-image">
+                  <img src="images/ONEE.png" class="product-thumb" alt="">
+              </div>
+          </div>
+          <div class="product-card">
+              <div class="product-image">
+                  <img src="images/ormvag-1.png" class="product-thumb" alt="">
+              </div>
+          </div>
+          <div class="product-card">
+              <div class="product-image">
+                  <img src="images/ORMVAl.png" class="product-thumb" alt="">
+              </div>
+          </div>
+          <div class="product-card">
+              <div class="product-image">
+                  <img src="images/RADEEF.png" class="product-thumb" alt="">
+              </div>
+          </div>
+          <div class="product-card">
+              <div class="product-image">
+                  <img src="images/radeeta.png" class="product-thumb" alt="">
+              </div>
+          </div>
+          <div class="product-card">
+              <div class="product-image">
+                  <img src="images/radem.png" class="product-thumb" alt="">
+              </div>
+          </div>
+          <div class="product-card">
+              <div class="product-image">
+                  <img src="images/rak.jpg" class="product-thumb" alt="">
+              </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+                <img src="images/SDD.jpg" class="product-thumb" alt="">
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+                <img src="images/SDE.png" class="product-thumb" alt="">
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+                <img src="images/UIK.png" class="product-thumb" alt="">
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+                <img src="images/UMS.png" class="product-thumb" alt="">
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+                <img src="images/usmba.png" class="product-thumb" alt="">
+            </div>
+          </div>
+      </div>
+    </section>
+    
+  </div>
+
+  <!-- footer -->
+  <footer>
+    <div class="text container py-4">
+
+      <div>
+        <h5>معلومات عنا</h5>
+        <img src="images/logo.png" alt="logo">
+        <p>
+          الإدارة المتكاملة والمتضافرة للموارد المائية من أجل التنمية المستدامة لحوض اللوكوس الهيدروليكي (التقييم ، التخطيط ، إدارة الموارد ، تشغيل الهياكل الهيدروليكية ، إلخ.
+        </p>
+        <p>وزارة الخط</p>
+        <p><a href="http://www.equipement.gov.ma/" target="_blank">وزارة النقل واللوجستيات والمياه</a></p>
+      </div>
+
+      <div>
+        <h5>اتصال</h5>
+        <p>
+          <br> المسيرة ، بريتيش بتروليوم: <br> 616 تطوان - المغرب ، هاتف: +212 5399-94567 / +212 5399- 94542 <br> فاكس: +212 5399-94442.
+        </p>
+        <div class="social">
+          <a href="http://www.twitter.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-twitter"></i></a>
+          <a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-instagram"></i></a>
+          <a href="http://www.linkedin.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="droit">
+      ABHL © Copyright 2016
+    </div>
+
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

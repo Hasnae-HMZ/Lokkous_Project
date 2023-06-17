@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <!-- font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- bootstrap 5.2 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <title>Agence</title>
+</head>
+<body>
+
+  <!-- title -->
+  <div class="title">
+    <div class="container title py-1">
+      <img src="images/title.png" alt="title" class="siteTitle">
+      <img src="images/logo.png" alt="logo" class="logo">
+    </div>
+  </div>
+  <!-- navbar dropdown -->
+  <nav class="navbar navbar-expand-lg" style="background: #00426D;">
+    <div class="container-fluid">
+      <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="text-light"><i class="fa-solid fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" dir="rtl">
+        <div class="navbar-nav m-auto">
+          <!-- accueil -->
+            <div class="dropdown">
+              <a href="index.html" target="_blank" rel="noopener noreferrer">
+                <button class="btn" type="button">
+                  الرئيسية
+                </button>
+              </a>
+            </div>
+            <!-- agence -->
+            <div class="dropdown">
+              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                الوكالة
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="agence.html" target="_blank">التعريف بالوكالة</a></li>
+                <li><a class="dropdown-item" href="agence.html">كلمة المدير</a></li>
+                <li><a class="dropdown-item" href="agence.html">المهام</a></li>
+                <li><a class="dropdown-item" href="agence.html">قيمنا</a></li>
+                <li><a class="dropdown-item" href="agence.html">المجلس الاداري</a></li>
+                <li><a class="dropdown-item" href="agence.html">المارد البشرية</a></li>
+              </ul>
+            </div>
+            <!-- Gouvernance -->
+            <div class="dropdown">
+              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                الحوكمة
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="gouvernance.html" target="_blank">اعداد عقود المياه الجوفية</a></li>
+              </ul>
+            </div>
+            <!-- realisation -->
+            <div class="dropdown">
+              <a href="realisation.html" target="_blank" rel="noopener noreferrer">
+                <button class="btn" type="button">
+                  الانجازات
+                </button>
+              </a>
+            </div>
+            <!-- Recherche scientifique -->
+            <div class="dropdown">
+              <a href="recherche.html" target="_blank" rel="noopener noreferrer">
+                <button class="btn" type="button">
+                  البحث العلمي
+                </button>
+              </a>
+            </div>
+            <!-- Communication -->
+            <div class="dropdown">
+              <a href="communication.html" target="_blank" rel="noopener noreferrer">
+                <button class="btn" type="button">
+                  التواصل
+                </button>
+              </a>
+            </div>
+            <!-- coopération et partenariat -->
+            <div class="dropdown">
+              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                التعان و الشراكة
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="cooperation.html">التعاون الاسباني</a></li>
+                <li><a class="dropdown-item" href="cooperation.html">التعاون البلجيكي</a></li>
+                <li><a class="dropdown-item" href="cooperation.html">شراكات الوكالة</a></li>
+              </ul>
+            </div>
+            <!-- contact -->
+            <div class="dropdown">
+              <a href="contact.html" target="_blank" rel="noopener noreferrer">
+                <button class="btn" type="button">
+                  الاتصال
+                </button>
+              </a>
+            </div>
+          </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container presentation my-5">
+    
+    <div class="main">
+
+      <div class="left">
+        <ul class="ContenuList" id="ContenuList">
+          <li id="List1" onclick="ClickList1()"><a href="#">التعريف بالوكالة</a></li>
+          <li id="List2" onclick="ClickList2()"><a href="#">كلمة المدير</a></li>
+          <li id="List3" onclick="ClickList3()"><a href="#">المهام</a></li>
+          <li id="List4" onclick="ClickList4()"><a href="#">قيمنا</a></li>
+          <li id="List5" onclick="ClickList5()"><a href="#">المجلس الاداري</a></li>
+          <li id="List6" onclick="ClickList6()"><a href="#">الموارد البشرية</a></li>
+        </ul>
+      </div>
+        <!-- presentation -->
+      <div class="contentAll" id="content1">
+        <h3>عرض منطقة عمل ABHL</h3>
+        <div class="content">
+          <img src="images/siege_abhl.png" alt="siege_abhl">
+          <p>
+            تأسست وكالة حوض الهيدروليك لوكوس بموجب المرسوم 2-00-476 المؤرخ 14 نوفمبر 2000 تطبيقاً لقانون المياه 10/95 ، وهي مؤسسة عامة جديدة تخدم قطاع المياه في المنطقة ويتمثل دورها في ضمان اتساق المياه. على مستوى مستجمعات المياه الشمالية وإنشاء إدارة محلية منسقة مع المشغلين في قطاع المياه.
+            <br>
+            تمتد منطقة عمل وكالة حوض لوكوس الهيدروليكي على مساحة 12805 كيلومتر مربع ، وهي تغطي تقريباً كامل المنطقة الجديدة <a href="https://fr.wikipedia.org/wiki/Tanger-T%C3%A9touan-Al_Hoce%C3%AFma" target="_blank">لطنجة-تطوان-الحسيمة</a> . يقدر عدد السكان بحوالي 3.5 مليون نسمة والذي سينمو إلى حوالي 4.4 مليون نسمة في عام 2030.
+            <br>
+            وتتميز المنطقة بانفتاحها المزدوج على المحيط الأطلسي والبحر الأبيض المتوسط ​​من جهة ، وبهيمنة التضاريس المتكونة من سلسلة الريف التي تخترق شبه جزيرة طنجة من جهة أخرى.
+            <br>
+            تتمتع المنطقة بإمكانيات كبيرة مكنتها من إعادة إطلاق تنميتها الاقتصادية والاجتماعية. يمكن إدراك هذه الإمكانات من خلال زراعة حديثة بشكل متزايد ، وصناعة في تطور مستمر وسياحة متنوعة.
+            <br>
+            وتضم المنطقة حاليا أكثر من 800 وحدة صناعية 82٪ منها في ولايتي طنجة (50٪) وتطوان (32٪).
+            <br>
+            الزراعة هي النشاط الاقتصادي المهيمن في سهل لوكوس الذي يحتوي على أكبر مساحة مروية في المنطقة مجهزة بمكونات هيدروليكية كبيرة على مساحة تزيد عن 30400 هكتار.
+            <br>
+            نظرًا لموقعها الجغرافي المتميز ، تمتلك المنطقة أصولًا رئيسية لتطوير الأنشطة السياحية. تبلغ الطاقة الاستيعابية الإجمالية حوالي 20000 سرير ، وتتركز بشكل أساسي في مدينتي طنجة وتطوان ، والتي تم تصنيف ما يقرب من 60 ٪ منها.
+          </p>
+        </div>
+        
+        <div class="decoupage">
+          <h3>التقسيم الإداري لنطاق عمل الوكالة</h3>
+          <img src="images/map_presentation.png" alt="map">
+        </div>
+
+      </div>
+
+      <!-- Mot de Directeur -->
+      <div class="contentAll activeNone" id="content2">
+        <h3>كلمة المدير</h3>
+        <div class="content">
+          <!-- <img src="images/siege_abhl.png" alt="siege_abhl"> -->
+          <p>
+            
+          </p>
+        </div>
+      </div>
+
+      <!-- Missions -->
+      <div class="contentAll activeNone" id="content3">
+        <h3>عرض منطقة عمل ABHL</h3>
+        <div class="content">
+          <img src="images/mission_abhl.png" alt="siege_abhl">
+          <p>
+            وكالة حوض لوكوس الهيدروليكي هي مؤسسة عامة جديدة تخدم قطاع المياه في المنطقة ويتمثل دورها في ضمان اتساق السياسة المائية على مستوى مستجمعات المياه في الشمال وإنشاء إدارة محلية منسقة مع المشغلين في المياه قطاع.
+
+            تتولى وكالة الحوض بموجب القانون الصلاحيات التالية:
+            
+            وضع الخطة الرئيسية لتنمية الموارد المائية في منطقة عملها ؛
+            ضمان تطبيق الخطة الرئيسية للتنمية المتكاملة لموارد المياه في مجال عملها ؛
+            منح التراخيص والامتيازات لاستخدام الملك العام المائي المنصوص عليه في الخطة الرئيسية للتنمية المتكاملة لموارد المياه في مجال عملها ؛
+            تقديم أي مساعدة مالية وأي تقديم خدمات ، ولا سيما المساعدة الفنية ، إلى الأشخاص من القطاعين العام أو الخاص الذين يطلبونها ، إما لمنع تلوث الموارد المائية ، أو بهدف تطوير أو استخدام الملك العام المائي ؛
+            إجراء جميع القياسات البيزومترية والقياسات وكذلك الدراسات الهيدرولوجية والهيدروجيولوجية والتخطيط وإدارة المياه من الناحيتين الكمية والنوعية ؛
+            تنفيذ كافة إجراءات الجودة وتطبيق أحكام هذا القانون والقوانين النافذة المتعلقة بحماية الموارد المائية وإعادة جودتها بالتعاون مع الجهات الحكومية المسؤولة عن البيئة وتنمية الأراضي.
+            اقتراح وتنفيذ التدابير التنظيمية المناسبة ، لا سيما لضمان إمدادات المياه في حالة حدوث نقص معلن وفقًا للفصل 10 من قانون المياه 10/95 أو لمنع مخاطر الفيضانات ؛
+            إدارة ومراقبة استخدام موارد المياه المعبأة ؛
+            بناء البنية التحتية اللازمة للوقاية من الفيضانات ومكافحتها ؛
+            احتفظ بسجل لحقوق المياه
+            - (مقتطف من القانون 10/95).
+          </p>
+        </div>
+
+      </div>
+
+      <!-- nos valeurs -->
+      <div class="contentAll activeNone" id="content4">
+        <h3>قيمنا</h3>
+        <div class="content" style="justify-content: center;">
+          <img src="images/Nos_valeurs.png" alt="" style="width: 70%;height: 100%;">
+        </div>
+
+      </div>
+
+      <!-- majliss idara -->
+      <div class="contentAll activeNone" id="content5">
+        <h3>مجلس إدارة ABHL</h3>
+        <div class="content">
+          <img src="images/conseil_administration.png" alt="siege_abhl">
+          <p>
+
+            يجتمع مجلس إدارة وكالة حوض لوكوس الهيدروليكي ، برئاسة الهيئة الحكومية المسؤولة عن الموارد المائية ، مرتين في السنة ويضم 44 عضوًا يمثلون مختلف الجهات المعنية العامة والخاصة وكذلك جميع المهارات في مجال المياه.
+
+              يتكون مجلس الإدارة من:
+
+            لثالث ، ممثلي الدولة ،
+            لمدة ربع ، ممثلي المؤسسات العامة الخاضعة لإشراف الدولة والمسؤولين عن إنتاج مياه الشرب والطاقة الكهرومائية والري.
+            بالنسبة لبقية الممثلين:
+            <br>
+                            - غرف الزراعة المعنية ،
+                            <br>
+
+                            ـ غرف التجارة والصناعة والخدمات المعنية ،
+                            <br>
+
+                            - مجالس المحافظات والمقاطعات المعنية ،
+                            <br>
+
+                            - الجماعات العرقية المعنية.
+                            <br>
+
+                            - جمعيات مستخدمي المياه الزراعية المعنية ، المنتخبة من قبل أقرانها.
+                            <br>
+
+              قائمة أعضاء مجلس الإدارة
+
+            مسؤوليات مجلس الإدارة:
+
+            مجلس الإدارة :
+            <br>
+
+            - دراسة الخطة الرئيسية للتنمية المتكاملة للحوض الهيدروليكي قبل الموافقة عليها ،
+            <br>
+
+            - دراسة برامج تنمية الموارد المائية وإدارتها وكذلك برامج الأنشطة السنوية والمتعددة السنوات للوكالة ، قبل اعتمادها من قبل السلطة الحكومية المكلفة بالموارد المائية.
+            <br>
+
+            - يحدد ميزانية الوكالة وحساباتها.
+            <br>
+
+            - تخصيص الإتاوات من التلوث لإجراءات محددة للتحكم في تلوث المياه ،
+            <br>
+
+            - يقترح للجهة الحكومية المسؤولة عن الموارد المائية أساس ومعدلات الإتاوات التي تشكل مكافآت مستخدمي خدمات الهيئة ،
+            <br>
+
+            ـ تطوير النظام الأساسي لموظفي الجهاز المعتمد بالشروط المنصوص عليها في التشريعات النافذة لموظفي المؤسسات العامة.
+            <br>
+
+            - الموافقة على الاتفاقيات وعقود الامتياز التي تبرمها وكالة الحوض.
+            <br>
+
+            يجوز لمجلس الإدارة إنشاء أي لجنة يرى أن من المفيد تفويض بعض صلاحياتها إليها.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- RH -->
+      <div class="contentAll activeNone" id="content6">
+        <h3>وكالة الموارد البشرية</h3>
+        <div class="content">
+          <img src="images/ressource_humaine3.png" alt="siege_abhl">
+          <p>
+            يخدم وكالة حوض لوكوس الهيدروليكي فريق من حوالي مائة شخص يعملون لضمان حالة جيدة لموارد المياه في المنطقة الشمالية من المغرب. يتيح المكتب الرئيسي وكذلك وفد وكالة الحسيمة إمكانية تغطية نطاق منطقة عمل الحوض بشكل فعال
+          </p>
+        </div>
+        <table class="table">
+          <tr>
+            <td>مقر وكالة الحوض</td>
+            <td>52</td>
+          </tr>
+          <tr>
+            <td>طاقم السد</td>
+            <td>25</td>
+          </tr>
+          <tr>
+            <td>المحطات الهيدرومترية</td>
+            <td>16</td>
+          </tr>
+          <tr>
+            <td>وفد الحسيمة</td>
+            <td>6</td>
+          </tr>
+        </table>
+        <img src="images/Repartition.png" alt="">
+
+      </div>
+
+    </div>
+  
+  </div>
+
+  <!-- footer -->
+  <footer>
+    <div class="text container py-4">
+
+      <div>
+        <h5>معلومات عنا</h5>
+        <img src="images/logo.png" alt="logo">
+        <p>
+          الإدارة المتكاملة والمتضافرة للموارد المائية من أجل التنمية المستدامة لحوض اللوكوس الهيدروليكي (التقييم ، التخطيط ، إدارة الموارد ، تشغيل الهياكل الهيدروليكية ، إلخ.
+        </p>
+        <p>وزارة الخط</p>
+        <p><a href="http://www.equipement.gov.ma/" target="_blank">وزارة النقل واللوجستيات والمياه</a></p>
+      </div>
+
+      <div>
+        <h5>اتصال</h5>
+        <p>
+          <br> المسيرة ، بريتيش بتروليوم: <br> 616 تطوان - المغرب ، هاتف: +212 5399-94567 / +212 5399- 94542 <br> فاكس: +212 5399-94442.
+        </p>
+        <div class="social">
+          <a href="http://www.twitter.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-twitter"></i></a>
+          <a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-instagram"></i></a>
+          <a href="http://www.linkedin.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="droit">
+      ABHL © Copyright 2016
+    </div>
+
+  </footer>
+
+<script>
+
+  function ClickList1(){
+
+    document.getElementById('ContenuList').children[0].classList.add('activeColor');
+    document.getElementById('ContenuList').children[1].classList.remove('activeColor');
+    document.getElementById('ContenuList').children[2].classList.remove('activeColor');
+    document.getElementById('ContenuList').children[3].classList.remove('activeColor');
+    document.getElementById('ContenuList').children[4].classList.remove('activeColor');
+    document.getElementById('ContenuList').children[5].classList.remove('activeColor');
+    document.getElementById('content1').classList.add('activeBlock');
+    document.getElementById('content1').classList.remove('activeNone');
+    document.getElementById('content2').classList.add('activeNone');
+    document.getElementById('content2').classList.remove('activeBlock');
+    document.getElementById('content3').classList.add('activeNone');
+    document.getElementById('content3').classList.remove('activeBlock');
+    document.getElementById('content4').classList.add('activeNone');
+    document.getElementById('content4').classList.remove('activeBlock');
+    document.getElementById('content5').classList.add('activeNone');
+    document.getElementById('content5').classList.remove('activeBlock');
+    document.getElementById('content6').classList.add('activeNone');    
+    document.getElementById('content6').classList.remove('activeBlock');    
+  }
+
+  function ClickList2(){
+
+    document.getElementById('ContenuList').children[0].classList.remove('activeColor');
+    document.getElementById('ContenuList').children[1].classList.add('activeColor');
+    document.getElementById('ContenuList').children[2].classList.remove('activeColor');
+    document.getElementById('ContenuList').children[3].classList.remove('activeColor');
+    document.getElementById('ContenuList').children[4].classList.remove('activeColor');
+    document.getElementById('ContenuList').children[5].classList.remove('activeColor');
+    document.getElementById('content1').classList.add('activeNone');
+    document.getElementById('content1').classList.remove('activeBlock');
+    document.getElementById('content2').classList.add('activeBlock');
+    document.getElementById('content2').classList.remove('activeNone');
+    document.getElementById('content3').classList.add('activeNone');
+    document.getElementById('content3').classList.remove('activeBlock');
+    document.getElementById('content4').classList.add('activeNone');
+    document.getElementById('content4').classList.remove('activeBlock');
+    document.getElementById('content5').classList.add('activeNone');
+    document.getElementById('content5').classList.remove('activeBlock');
+    document.getElementById('content6').classList.add('activeNone');    
+    document.getElementById('content6').classList.remove('activeBlock');
+    
+  }
+
+  function ClickList3(){
+
+document.getElementById('ContenuList').children[0].classList.remove('activeColor');
+document.getElementById('ContenuList').children[1].classList.remove('activeColor');
+document.getElementById('ContenuList').children[2].classList.add('activeColor');
+document.getElementById('ContenuList').children[3].classList.remove('activeColor');
+document.getElementById('ContenuList').children[4].classList.remove('activeColor');
+document.getElementById('ContenuList').children[5].classList.remove('activeColor');
+document.getElementById('content1').classList.add('activeNone');
+document.getElementById('content1').classList.remove('activeBlock');
+document.getElementById('content2').classList.add('activeNone');
+document.getElementById('content2').classList.remove('activeBlock');
+document.getElementById('content3').classList.add('activeBlock');
+document.getElementById('content3').classList.remove('activeNone');
+document.getElementById('content4').classList.add('activeNone');
+document.getElementById('content4').classList.remove('activeBlock');
+document.getElementById('content5').classList.add('activeNone');
+document.getElementById('content5').classList.remove('activeBlock');
+document.getElementById('content6').classList.add('activeNone');    
+document.getElementById('content6').classList.remove('activeBlock');
+
+}
+
+function ClickList4(){
+
+document.getElementById('ContenuList').children[0].classList.remove('activeColor');
+document.getElementById('ContenuList').children[1].classList.remove('activeColor');
+document.getElementById('ContenuList').children[2].classList.remove('activeColor');
+document.getElementById('ContenuList').children[3].classList.add('activeColor');
+document.getElementById('ContenuList').children[4].classList.remove('activeColor');
+document.getElementById('ContenuList').children[5].classList.remove('activeColor');
+document.getElementById('content1').classList.add('activeNone');
+document.getElementById('content1').classList.remove('activeBlock');
+document.getElementById('content2').classList.add('activeNone');
+document.getElementById('content2').classList.remove('activeBlock');
+document.getElementById('content3').classList.add('activeNone');
+document.getElementById('content3').classList.remove('activeBlock');
+document.getElementById('content4').classList.add('activeBlock');
+document.getElementById('content4').classList.remove('activeNone');
+document.getElementById('content5').classList.add('activeNone');
+document.getElementById('content5').classList.remove('activeBlock');
+document.getElementById('content6').classList.add('activeNone');    
+document.getElementById('content6').classList.remove('activeBlock');
+
+}
+
+function ClickList5(){
+
+document.getElementById('ContenuList').children[0].classList.remove('activeColor');
+document.getElementById('ContenuList').children[1].classList.remove('activeColor');
+document.getElementById('ContenuList').children[2].classList.remove('activeColor');
+document.getElementById('ContenuList').children[3].classList.remove('activeColor');
+document.getElementById('ContenuList').children[4].classList.add('activeColor');
+document.getElementById('ContenuList').children[5].classList.remove('activeColor');
+document.getElementById('content1').classList.add('activeNone');
+document.getElementById('content1').classList.remove('activeBlock');
+document.getElementById('content2').classList.add('activeNone');
+document.getElementById('content2').classList.remove('activeBlock');
+document.getElementById('content3').classList.add('activeNone');
+document.getElementById('content3').classList.remove('activeBlock');
+document.getElementById('content4').classList.add('activeNone');
+document.getElementById('content4').classList.remove('activeBlock');
+document.getElementById('content5').classList.add('activeBlock');
+document.getElementById('content5').classList.remove('activeNone');
+document.getElementById('content6').classList.add('activeNone');    
+document.getElementById('content6').classList.remove('activeBlock');
+
+}
+
+function ClickList6(){
+
+document.getElementById('ContenuList').children[0].classList.remove('activeColor');
+document.getElementById('ContenuList').children[1].classList.remove('activeColor');
+document.getElementById('ContenuList').children[2].classList.remove('activeColor');
+document.getElementById('ContenuList').children[3].classList.remove('activeColor');
+document.getElementById('ContenuList').children[4].classList.remove('activeColor');
+document.getElementById('ContenuList').children[5].classList.add('activeColor');
+document.getElementById('content1').classList.add('activeNone');
+document.getElementById('content1').classList.remove('activeBlock');
+document.getElementById('content2').classList.add('activeNone');
+document.getElementById('content2').classList.remove('activeBlock');
+document.getElementById('content3').classList.add('activeNone');
+document.getElementById('content3').classList.remove('activeBlock');
+document.getElementById('content4').classList.add('activeNone');
+document.getElementById('content4').classList.remove('activeBlock');
+document.getElementById('content5').classList.add('activeNone');
+document.getElementById('content5').classList.remove('activeBlock');
+document.getElementById('content6').classList.add('activBlock');    
+document.getElementById('content6').classList.remove('activeNone');
+
+}
+
+
+</script>
+
+  <script src="script.js"></script>
+</body>
+</html>

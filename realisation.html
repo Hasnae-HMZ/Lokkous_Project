@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <!-- font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- bootstrap 5.2 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <title>realisation</title>
+</head>
+<body>
+
+  <!-- title -->
+  <div class="title">
+    <div class="container title py-1">
+      <img src="images/title.png" alt="title" class="siteTitle">
+      <img src="images/logo.png" alt="logo" class="logo">
+    </div>
+  </div>
+  <!-- navbar dropdown -->
+  <nav class="navbar navbar-expand-lg" style="background: #00426D;">
+    <div class="container-fluid">
+      <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="text-light"><i class="fa-solid fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" dir="rtl">
+        <div class="navbar-nav m-auto">
+          <!-- accueil -->
+            <div class="dropdown">
+              <a href="index.html" target="_blank" rel="noopener noreferrer">
+                <button class="btn" type="button">
+                  الرئيسية
+                </button>
+              </a>
+            </div>
+            <!-- agence -->
+            <div class="dropdown">
+              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                الوكالة
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="agence.html" target="_blank">التعريف بالوكالة</a></li>
+                <li><a class="dropdown-item" href="agence.html">كلمة المدير</a></li>
+                <li><a class="dropdown-item" href="agence.html">المهام</a></li>
+                <li><a class="dropdown-item" href="agence.html">قيمنا</a></li>
+                <li><a class="dropdown-item" href="agence.html">المجلس الاداري</a></li>
+                <li><a class="dropdown-item" href="agence.html">المارد البشرية</a></li>
+              </ul>
+            </div>
+            <!-- Gouvernance -->
+            <div class="dropdown">
+              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                الحوكمة
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="gouvernance.html" target="_blank">اعداد عقود المياه الجوفية</a></li>
+              </ul>
+            </div>
+            <!-- realisation -->
+            <div class="dropdown">
+              <a href="realisation.html" target="_blank" rel="noopener noreferrer">
+                <button class="btn" type="button">
+                  الانجازات
+                </button>
+              </a>
+            </div>
+            <!-- Recherche scientifique -->
+            <div class="dropdown">
+              <a href="recherche.html" target="_blank" rel="noopener noreferrer">
+                <button class="btn" type="button">
+                  البحث العلمي
+                </button>
+              </a>
+            </div>
+            <!-- Communication -->
+            <div class="dropdown">
+              <a href="communication.html" target="_blank" rel="noopener noreferrer">
+                <button class="btn" type="button">
+                  التواصل
+                </button>
+              </a>
+            </div>
+            <!-- coopération et partenariat -->
+            <div class="dropdown">
+              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                التعان و الشراكة
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="cooperation.html">التعاون الاسباني</a></li>
+                <li><a class="dropdown-item" href="cooperation.html">التعاون البلجيكي</a></li>
+                <li><a class="dropdown-item" href="cooperation.html">شراكات الوكالة</a></li>
+              </ul>
+            </div>
+            <!-- contact -->
+            <div class="dropdown">
+              <a href="contact.html" target="_blank" rel="noopener noreferrer">
+                <button class="btn" type="button">
+                  الاتصال
+                </button>
+              </a>
+            </div>
+          </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container presentation my-5">
+    
+    <div class="main">
+
+      <div class="left">
+        <ul class="ContenuList" id="ContenuList">
+          <li class="mb-1" onclick="ClickList1()"><a href="#">الطاقة المتجددة التقليدية</a></li>
+          <li class="mb-1" onclick="ClickList2()"><a href="#">الطاقة المتجددة غير التقليدية</a></li>
+          <li class="mb-1" onclick="ClickList3()"><a href="Rapport qualité 2014.pdf" download="">جودة الطاقة المتجددة</a></li>
+          <li onclick="ClickList4()"><a href="#">الوقاية من الفيضانات</a></li>
+        </ul>
+      </div>
+
+      <!--  -->
+      <div class="contentAll" id="content1">
+        <h3>إنجازات</h3>
+        <div class="content">
+          <p>
+            إنشائها ، شاركت وكالة حوض لوكوس الهيدروليكي بنشاط في تطوير وحماية موارد المياه في مجال عملها. يتم الترحيب بالأهداف التي تم تحقيقها بارتياح من قبل المستخدمين وأصحاب المصلحة المحليين.
+            <br>
+            المشاركة في تأمين جميع احتياجات مياه الشرب والصناعية في المنطقة.
+            <br>
+            وضع استراتيجية لتنمية الموارد المائية تجعل من الممكن تلبية الاحتياجات المائية لمشاريع مخطط المغرب الأخضر.
+            <br> 
+            الوقاية من الفيضانات
+            <br>
+            إزالة التلوث
+            <br>
+            
+            - مشروع إزالة التلوث من التعاونية APIA
+            <br>
+            - مشروع إزالة التلوث في تعاونية كولينورد
+            <br>
+            - مشروع إزالة التلوث من التعاونية ...
+          </p>
+        </div>
+
+      </div>
+
+
+      <div class="contentAll activeNone" id="content2">
+        <h3>إنجازات</h3>
+        <div class="content">
+          <p>
+            إنشائها ، شاركت وكالة حوض لوكوس الهيدروليكي بنشاط في تطوير وحماية موارد المياه في مجال عملها. يتم الترحيب بالأهداف التي تم تحقيقها بارتياح من قبل المستخدمين وأصحاب المصلحة المحليين.
+            <br>
+            المشاركة في تأمين جميع احتياجات مياه الشرب والصناعية في المنطقة.
+            <br>
+            وضع استراتيجية لتنمية الموارد المائية تجعل من الممكن تلبية الاحتياجات المائية لمشاريع مخطط المغرب الأخضر.
+            <br> 
+            الوقاية من الفيضانات
+            <br>
+            إزالة التلوث
+            <br>
+            
+            - مشروع إزالة التلوث من التعاونية APIA
+            <br>
+            - مشروع إزالة التلوث في تعاونية كولينورد
+            <br>
+            - مشروع إزالة التلوث من التعاونية ...
+          </p>
+        </div>
+
+      </div>
+
+
+      <div class="contentAll activeNone" id="content4">
+        <h3>قائمة اتفاقيات الشراكة ABHL</h3>
+        <div class="content">
+            <table class="table table-striped table-primary table-responsive">
+              <tr>
+                <th>شركاء</th>
+                <th>بالموضوع</th>
+                <th>مبلغ المشروع (مليون درهم)</th>
+                <th>حصة ABHL (MDH)</th>
+                <th>ملاحظة</th>
+              </tr>
+
+              <tr>
+                <td>
+                  <ul>
+                    <li>CGI</li>
+                    <li>كتابة الدولة للمياه</li>
+                    <li>ABHL</li>
+                </ul>
+              </td>
+              <td>اتفاقية شراكة تتعلق بإنجاز مشروع التخطيط والتطوير العمراني "المسيرة" في مدينة الفنيدق</td>
+              <td>140</td>
+              <td>-</td>
+              <td>مكتمل</td>
+              </tr>
+
+              <tr>
+                <td>
+                  <ul>
+                    <li>بلدية الحسيمة</li>
+                    <li>كتابة الدولة للمياه</li>
+                    <li>ABHL</li>
+                </ul>
+              </td>
+              <td>
+                اتفاقية تنفيذ أعمال الحماية من الفيضانات في منطقة كالابونيتا السياحية
+              </td>
+              <td>29</td>
+              <td>4</td>
+              <td>مكتمل</td>
+              </tr>
+
+              <tr>
+                <td>
+                  <ul>
+                    <li>بلدية الحسيمة</li>
+                    <li>ABHL</li>
+                </ul>
+              </td>
+              <td>
+                اتفاق لإنجاز أعمال الحماية من فيضانات وادي المالح بولاية جهة تازة - الحسيمة - تاونات
+              </td>
+              <td>2</td>
+              <td>2</td>
+              <td>مكتمل</td>
+              </tr>
+
+              <tr>
+                <td>
+                  <ul>
+                    <li> بلدية الفنيدق</li>
+                    <li>ABHL</li>
+                    <li> يعشق</li>
+                </ul>
+              </td>
+              <td>
+                اتفاق لتنفيذ أعمال حماية المنطقة الشمالية لمركز الفنيدق من السيول من قبل الشعب المجاورة
+              </td>
+              <td>20.43</td>
+              <td>2.5</td>
+              <td>مكتمل</td>
+              </tr>
+
+              <tr>
+                <td>
+                  <ul>
+                    <li>· كتابة الدولة للمياه</li>
+                    <li>ABHL</li>
+                    <li> كومونة تانج الحضرية</li>
+                    <li>APDN</li>
+                </ul>
+              </td>
+              <td>
+                اتفاقية شراكة محددة لتطوير أودية طنجة
+              </td>
+              <td>470</td>
+              <td>-  (مالك المشروع المفوض)</td>
+              <td>مكتمل</td>
+              </tr>
+
+              <tr>
+                <td>
+                  <ul>
+                    <li>ABHL</li>
+                    <li>بلدية وزان</li>
+                </ul>
+              </td>
+              <td>
+                اتفاقية شراكة لحماية مدينة وزان من فيضانات وادي الخندق
+              </td>
+              <td>2.39</td>
+              <td>2.39</td>
+              <td>مكتمل</td>
+              </tr>
+
+              <tr>
+                <td>
+                  <ul>
+                    <li>ABHL</li>
+                    <li>بلدية تطوان الحضرية</li>
+                </ul>
+              </td>
+              <td>
+                اتفاقية شراكة لحماية مدينة تطوان من فيضانات وادي بوصافو
+              </td>
+              <td>8</td>
+              <td>8</td>
+              <td>مكتمل</td>
+              </tr>
+
+              <tr>
+                <td>
+                  <ul>
+                    <li>ABHL</li>
+                    <li>APDN</li>
+                    <li>·Wilaya de Taza – Al Hoceima – Taounate</li>
+                </ul>
+              </td>
+              <td>
+                اتفاقية شراكة محددة لتنفيذ مشروع الحماية من السيول لمدينة إمزورن.
+              </td>
+              <td>36</td>
+              <td>8</td>
+              <td>مكتمل</td>
+              </tr>
+
+              <tr>
+                <td>
+                  <ul>
+                    <li>ABHL</li>
+                    <li>ONEE</li>
+                    <li>ولاية شفشاون </li>
+                    <li>رئيس مجلس محافظة شفشاون</li>
+                    <li>· الوكالة الوطنية الأفغانية</li>
+                    <li>·وزارة الثقافة؛</li>
+                    <li>· HC المياه والغابات</li>
+                    <li>· وزارة الطاقة والمعادن والمياه والبيئة</li>
+                    <li>·وزارة التربية الوطنية</li>
+                    <li>وزارة الداخلية؛</li>
+                    <li>· وزارة الإسكان والتخطيط العمراني</li>
+                    <li>· وزارة التجهيز والنقل</li>
+                    <li>· الترويج الوطن</li>
+                    <li>· APDN</li>
+                </ul>
+              </td>
+              <td>
+                برنامج التطوير العمراني لمركز جبها
+              </td>
+              <td>241.30</td>
+              <td>12</td>
+              <td>اكتملت أعمال ABHL ؛ شريحة الترويج الوطني غير الملتزم بها
+              </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <ul>
+                    <li>ABHL</li>
+                    <li>بلدية بني بوعياش</li>
+                    <li>·Wilaya de Taza – Al Hoceima – Taounate</li>
+                </ul>
+              </td>
+              <td>
+                اتفاقية شراكة لتنفيذ أعمال حماية مدينة بني بوعياش من السيول في ولاية الحسيمة
+              </td>
+              <td>15</td>
+              <td>4</td>
+              <td>أعمال جارية</td>
+              </tr>
+
+              <tr>
+                <td>
+                  <ul>
+                    <li>ABHL</li>
+                    <li>·Wilaya d’Al Hoceima</li>
+                </ul>
+              </td>
+              <td>
+                اتفاقية شراكة محددة لتنفيذ مشروع الحماية من الفيضانات لمدينة تارجيست (إقليم الحسيمة)
+              </td>
+              <td>7</td>
+              <td>3</td>
+              <td>في تَقَدم</td>
+              </tr>
+
+              <tr>
+                <td>
+                  <ul>
+                    <li>ABHL</li>
+                    <li>APDN</li>
+                    <li>بلدية سنادا الريفية</li>
+                </ul>
+              </td>
+              <td>
+                اتفاقية شراكة محددة لانجاز مشروع حماية مركز سنادة من السيول
+              </td>
+              <td>12</td>
+              <td>-  (مالك المشروع المفوض)</td>
+              <td>في تَقَدم</td>
+              </tr>
+
+              <tr>
+                <td>
+                  <ul>
+                    <li>ABHL</li>
+                    <li>كومونة أمسا الريفية</li>
+                </ul>
+              </td>
+              <td>
+                اتفاقية شراكة لحماية مركز أمسا من السيول
+              </td>
+              <td>2</td>
+              <td>2</td>
+              <td>في تَقَدم</td>
+              </tr>
+
+            </table>
+        </div>
+
+      </div>
+
+    </div>
+  
+  </div>
+
+  <!-- footer -->
+  <footer>
+    <div class="text container py-4">
+
+      <div>
+        <h5>معلومات عنا</h5>
+        <img src="images/logo.png" alt="logo">
+        <p>
+          الإدارة المتكاملة والمتضافرة للموارد المائية من أجل التنمية المستدامة لحوض اللوكوس الهيدروليكي (التقييم ، التخطيط ، إدارة الموارد ، تشغيل الهياكل الهيدروليكية ، إلخ.
+        </p>
+        <p>وزارة الخط</p>
+        <p><a href="http://www.equipement.gov.ma/" target="_blank">وزارة النقل واللوجستيات والمياه</a></p>
+      </div>
+
+      <div>
+        <h5>اتصال</h5>
+        <p>
+          <br> المسيرة ، بريتيش بتروليوم: <br> 616 تطوان - المغرب ، هاتف: +212 5399-94567 / +212 5399- 94542 <br> فاكس: +212 5399-94442.
+        </p>
+        <div class="social">
+          <a href="http://www.twitter.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-twitter"></i></a>
+          <a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-instagram"></i></a>
+          <a href="http://www.linkedin.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="droit">
+      ABHL © Copyright 2016
+    </div>
+
+  </footer>
+
+
+  <script>
+
+    function ClickList1(){
+  
+      document.getElementById('ContenuListRea').children[0].classList.add('activeColor');
+      document.getElementById('ContenuListRea').children[1].classList.remove('activeColor');
+      document.getElementById('ContenuListRea').children[2].classList.remove('activeColor');
+      document.getElementById('ContenuListRea').children[3].classList.remove('activeColor');
+      document.getElementById('content1').classList.add('activeBlock');
+      document.getElementById('content1').classList.remove('activeNone');
+      document.getElementById('content2').classList.add('activeNone');
+      document.getElementById('content2').classList.remove('activeBlock');
+      document.getElementById('content4').classList.add('activeNone');
+      document.getElementById('content4').classList.remove('activeBlock');   
+    }
+  
+    function ClickList2(){
+  
+      document.getElementById('ContenuList').children[0].classList.remove('activeColor');
+      document.getElementById('ContenuList').children[1].classList.add('activeColor');
+      document.getElementById('ContenuList').children[2].classList.remove('activeColor');
+      document.getElementById('ContenuList').children[3].classList.remove('activeColor');
+      document.getElementById('content1').classList.add('activeNone');
+      document.getElementById('content1').classList.remove('activeBlock');
+      document.getElementById('content2').classList.add('activeBlock');
+      document.getElementById('content2').classList.remove('activeNone');
+      document.getElementById('content4').classList.add('activeNone');
+      document.getElementById('content4').classList.remove('activeBlock');
+      
+    }
+
+    function ClickList3(){
+  
+      document.getElementById('ContenuList').children[0].classList.remove('activeColor');
+      document.getElementById('ContenuList').children[1].classList.remove('activeColor');
+      document.getElementById('ContenuList').children[2].classList.add('activeColor');
+      document.getElementById('ContenuList').children[3].classList.remove('activeColor');
+
+    }
+  
+    function ClickList4(){
+  
+      document.getElementById('ContenuList').children[0].classList.remove('activeColor');
+      document.getElementById('ContenuList').children[1].classList.remove('activeColor');
+      document.getElementById('ContenuList').children[2].classList.remove('activeColor');
+      document.getElementById('ContenuList').children[3].classList.add('activeColor');
+      document.getElementById('content1').classList.add('activeNone');
+      document.getElementById('content1').classList.remove('activeBlock');
+      document.getElementById('content2').classList.add('activeNone');
+      document.getElementById('content2').classList.remove('activeBlock');
+      document.getElementById('content4').classList.add('activeBlock');
+      document.getElementById('content4').classList.remove('activeNone');
+    
+    }
+  
+  
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
